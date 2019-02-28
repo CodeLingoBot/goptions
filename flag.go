@@ -19,7 +19,7 @@ type Flag struct {
 	DefaultValue interface{}
 }
 
-// Return the name of the flag preceding the right amount of dashes.
+// Name returns the name of the flag preceding the right amount of dashes.
 // The long name is preferred. If no name has been specified, "<unspecified>"
 // will be returned.
 func (f *Flag) Name() string {
